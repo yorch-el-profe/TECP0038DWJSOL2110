@@ -1,0 +1,37 @@
+.container {
+  background-color: #f48fb1;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rectangle {
+  width: 30%;
+  background-color: #311b92;
+  height: 200px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subrectangle {
+  background-color: #757575;
+  height: 170px;
+  width: 30px;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
