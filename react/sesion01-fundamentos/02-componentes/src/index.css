@@ -1,0 +1,34 @@
+.container {
+  background-color: #03a9f4;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.rectangle {
+  background-color: #ffa000;
+  width: 80%;
+  height: 50px;
+  border: 40px solid white;
+}
+
+.square {
+  background-color: #ffa000;
+  width: 50px;
+  height: 50px;
+  border: 40px solid white;
+}
