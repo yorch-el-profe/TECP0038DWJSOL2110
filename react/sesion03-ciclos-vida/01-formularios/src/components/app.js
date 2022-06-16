@@ -22,6 +22,7 @@ class App extends React.Component {
 		// Detener la propagación del evento
 		event.preventDefault();
 
+		// NO HACER ESTO EN LA VIDA REAL, ES SOLO PARA PRUEBAS
 		if (this.state.username === "admin" && this.state.password === "password") {
 			alert("Bienvenido usuario administrador");
 		} else {
