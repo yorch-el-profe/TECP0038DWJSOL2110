@@ -35,16 +35,41 @@ function App() {
 	]);
 
 	return (
-		<div className="container">
-			{products.map((product) => (
-				<ProductCard
-					name={product.name}
-					price={product.price}
-					description={product.description}
-					picture={product.picture}
-					discount={product.discount}
-				/>
-			))}
+		<div className="center-container">
+			<div class="container">
+				<form className="row">
+					<div class="mb-3 col-6">
+						<label class="form-label">Nombre del producto</label>
+						<input type="text" class="form-control" />
+					</div>
+					<div class="mb-3 col-6">
+						<label class="form-label">Precio</label>
+						<input type="text" class="form-control" />
+					</div>
+					<div class="mb-3 col-6">
+						<label class="form-label">Descripción</label>
+						<textarea className="form-control"></textarea>
+					</div>
+					<div class="mb-3 col-6">
+						<label class="form-label">Foto (url)</label>
+						<input type="text" class="form-control" />
+					</div>
+					<button type="submit" className="btn btn-primary">
+						Agregar
+					</button>
+				</form>
+			</div>
+			<div className="d-flex justify-content-center align-items-center flex-wrap">
+				{products.map((product) => (
+					<ProductCard
+						name={product.name}
+						price={product.price}
+						description={product.description}
+						picture={product.picture}
+						discount={product.discount}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }

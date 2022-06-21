@@ -12,9 +12,11 @@ function ProductCard({ discount, picture, price, name, description }) {
 			<img src={picture} />
 			<div className="price">${price}</div>
 			<figcaption>
-				<h3>{name}</h3>
-				<p>{description}</p>
-				<a style={styles}>Agregar al carrito</a>
+				<h3 className="fs-5">{name}</h3>
+				<p className="fs-6">{description}</p>
+				<a style={styles} className="text-white">
+					Agregar al carrito
+				</a>
 			</figcaption>
 		</figure>
 	);
