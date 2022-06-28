@@ -30,6 +30,11 @@ function Navbar() {
 								Acerca de
 							</Link>
 						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/contact">
+								Contacto
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>

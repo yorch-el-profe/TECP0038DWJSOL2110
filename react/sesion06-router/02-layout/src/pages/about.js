@@ -1,14 +1,5 @@
-import Navbar from "../components/navbar";
-
 function About() {
-	return (
-		<>
-			<Navbar />
-			<div className="container mt-4">
-				<h1>Acerca de</h1>
-			</div>
-		</>
-	);
+	return <h1>Acerca de</h1>;
 }
 
 export default About;

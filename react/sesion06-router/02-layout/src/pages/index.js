@@ -1,14 +1,5 @@
-import Navbar from "../components/navbar";
-
 function Index() {
-	return (
-		<>
-			<Navbar />
-			<div className="container mt-4">
-				<h1>Hello World</h1>
-			</div>
-		</>
-	);
+	return <h1>Hello World</h1>;
 }
 
 export default Index;
