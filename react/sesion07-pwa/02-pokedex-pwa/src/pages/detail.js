@@ -6,11 +6,14 @@ function Detail() {
 	const params = useParams();
 	const [pokemon, setPokemon] = useState(null);
 
-	useEffect(function () {
-		fetch("https://bedu-pokemon-api.herokuapp.com/pokemon/" + params.id)
-			.then((response) => response.json())
-			.then(({ data }) => setPokemon(data));
-	}, []);
+	useEffect(
+		function () {
+			fetch("https://bedu-pokemon-api.herokuapp.com/pokemon/" + params.id)
+				.then((response) => response.json())
+				.then(({ data }) => setPokemon(data));
+		},
+		[params.id]
+	);
 
 	return (
 		<div className="vw-100 vh-100 d-flex justify-content-center align-items-center">
